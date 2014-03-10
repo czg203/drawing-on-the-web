@@ -39,9 +39,18 @@
 				-webkit-animation-timing-function: linear;
 			}
 
-			.cube:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube5:hover {
-				animation-play-state: paused;
-				-webkit-animation-play-state: paused;
+			.cube2:hover{
+				animation: spin-out-back 2s;
+				-webkit-animation: spin-out-back 2s;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+			}
+			
+			.cube3:hover{
+				animation: spin-out-front 2s;
+				-webkit-animation: spin-out-front 2s;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
 			}
 
 			.cube div {
@@ -86,6 +95,26 @@
 			@-webkit-keyframes spin {
 				from {-webkit-transform: rotateY(0deg);}
 				to {-webkit-transform: rotateY(360deg);}
+			}
+			
+			@keyframes spin-out-back {
+				from {transform: rotateX(0deg) translateX(0);}
+				to {transform: rotateX(-360deg) translateX(0);}
+			}
+
+			@-webkit-keyframes spin-out-back {
+				from {-webkit-transform: rotateX(0deg) translateX(0);}
+				to {-webkit-transform: rotateX(-360deg) translateX(0);}
+			}
+			
+			@keyframes spin-out-front {
+				from {transform: rotateX(0deg) translateX(0);}
+				to {transform: rotateX(360deg) translateX(0);}
+			}
+
+			@-webkit-keyframes spin-out-front {
+				from {-webkit-transform: rotateX(0deg) translateX(0);}
+				to {-webkit-transform: rotateX(360deg) translateX(0);}
 			}
 
 			.back {
