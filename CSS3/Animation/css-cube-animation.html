@@ -38,18 +38,19 @@
 				animation-timing-function: linear;
 				-webkit-animation-timing-function: linear;
 			}
-			
+
+@media DISABLED{			
 			.cube:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube5:hover {
 				animation: spin-out-left 2s;
 				-webkit-animation: spin-out-left 2s;
 				animation-timing-function: linear;
 				-webkit-animation-timing-function: linear;				
 			}
+}
 
-@media DISABLED{
 			.cube:hover{
-				animation: spin-out-back 2s;
-				-webkit-animation: spin-out-back 2s;
+				animation: spin-out-front 2s;
+				-webkit-animation: spin-out-front 2s;
 				animation-timing-function: linear;
 				-webkit-animation-timing-function: linear;
 			}
@@ -62,24 +63,18 @@
 			}
 			
 			.cube3:hover{
-				animation: spin-out-front 2s;
-				-webkit-animation: spin-out-front 2s;
+				animation: spin-out-right 2s;
+				-webkit-animation: spin-out-right 2s;
 				animation-timing-function: linear;
 				-webkit-animation-timing-function: linear;
 			}
 			.cube4:hover{
-				animation: spin-out-front 2s;
-				-webkit-animation: spin-out-front 2s;
+				animation: spin-out-left 2s;
+				-webkit-animation: spin-out-left 2s;
 				animation-timing-function: linear;
 				-webkit-animation-timing-function: linear;
 			}
-			.cube5:hover{
-				animation: spin-out-front 2s;
-				-webkit-animation: spin-out-front 2s;
-				animation-timing-function: linear;
-				-webkit-animation-timing-function: linear;
-			}
-}
+
 			.cube div {
 				position: absolute;
 				width: 200px;
@@ -88,28 +83,28 @@
 
 			.cube2 div {
 				position: absolute;
-				<!--top: -250px;-->
+				top: -250px;
 				width: 200px;
 				height: 200px;
 			}
 
 			.cube3 div {
 				position: absolute;
-				<!--top: 250px;-->
+				top: 250px;
 				width: 200px;
 				height: 200px;
 			}
 
 			.cube4 div {
 				position: absolute;
-				<!--left: 250px;-->
+				left: 250px;
 				width: 200px;
 				height: 200px;
 			}
 
 			.cube5 div {
 				position: absolute;
-				<!--left: -250px;-->
+				left: -250px;
 				width: 200px;
 				height: 200px;
 			}
@@ -124,22 +119,22 @@
 				to {-webkit-transform: rotateY(360deg);}
 			}
 			
-			@keyframes spin-out-back {
+			@keyframes spin-out-front {
 				from {transform: rotateX(0deg) translateZ(0);}
 				to {transform: rotateX(-360deg) translateZ(-250px);}
 			}
 
-			@-webkit-keyframes spin-out-back {
+			@-webkit-keyframes spin-out-front {
 				from {-webkit-transform: rotateX(0deg) translateX(0);}
 				to {-webkit-transform: rotateX(-360deg) translateZ(-250px);}
 			}
 			
-			@keyframes spin-out-front {
+			@keyframes spin-out-back {
 				from {transform: rotateX(0deg) translateZ(0);}
 				to {transform: rotateX(360deg) translateZ(250px);}
 			}
 
-			@-webkit-keyframes spin-out-front {
+			@-webkit-keyframes spin-out-back {
 				from {-webkit-transform: rotateX(0deg) translateZ(0);}
 				to {-webkit-transform: rotateX(360deg) translateZ(250px);}
 			}
