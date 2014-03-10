@@ -39,6 +39,54 @@
 				-webkit-animation-timing-function: linear;
 			}
 
+			.diamond, .diamond2, .diamond3, .diamond4, .diamond5 {
+				position: relative;
+				width: 200px;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+				transform-origin: 25% 25%;
+				-webkit-transform-origin: 25% 25%;
+				animation: spin 4s;
+				-webkit-animation: spin 4s;
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+			}
+			
+			.diamond div {
+				position: absolute;
+				width: 100px;
+				height: 100px;
+			}
+			
+			.diamond2 div {
+				position: absolute;
+				top: -250px;
+				width: 100px;
+				height: 100px;
+			}
+			.diamond3 div {
+				position: absolute;
+				top: 250px;
+				width: 100px;
+				height: 100px;
+			}
+			.diamond4 div {
+				position: absolute;
+				left: 250px;
+				width: 100px;
+				height: 100px;
+			}
+			.diamond5 div {
+				position: absolute;
+				left: -250px;
+				width: 100px;
+				height: 100px;
+			}
+
+
+
 @media DISABLED{			
 			.cube:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube5:hover {
 				animation: spin-out-left 2s;
@@ -202,11 +250,336 @@
 				transform: translateZ(100px);
 				-webkit-transform: translateZ(100px);
 			}
+			/*Cubes css end here*/
+			
+			.back3 {
+				transform: translateZ(-50px) rotateY(180deg) rotateX(30deg);
+				-webkit-transform: translateZ(-50px) rotateY(180deg) rotateX(30deg);
+				transform-origin: bottom center;
+				-webkit-transform-origin: bottom center;
+			}
+			
+			.right3 {
+				transform: rotateY(-270deg) translateX(50px) rotateX(30deg);
+				-webkit-transform: rotateY(-270deg) translateX(50px) rotateX(30deg);
+				transform-origin: bottom right;
+				-webkit-transform-origin: bottom right;
+			}
+			.left3 {
+				transform: rotateY(270deg) translateX(-50px) rotateX(30deg);
+				-webkit-transform: rotateY(270deg) translateX(-50px) rotateX(30deg);
+				transform-origin: bottom left;
+				-webkit-transform-origin: bottom left;
+			}
+/*			
+			.bottom {
+				transform: rotateX(90deg) translateY(50px);
+				-webkit-transform: rotateX(90deg) translateY(50px);
+				transform-origin: bottom center;
+				-webkit-transform-origin: bottom center;
+			}
+*/			
+			.front3 {
+				transform: translateZ(50px) rotateX(30deg);
+				-webkit-transform: translateZ(50px) rotateX(30deg);
+				transform-origin: bottom center;
+				-webkit-transform-origin: bottom center;
+			}
+			
+			.back2 {
+				transform: translateZ(-50px) rotateY(180deg) rotateX(-210deg);
+				-webkit-transform: translateZ(-50px) rotateY(180deg) rotateX(-210deg);
+				transform-origin: bottom center;
+				-webkit-transform-origin: bottom center;
+			}
+			
+			.right2 {
+				transform: rotateY(-270deg) translateX(50px) rotateX(-210deg);
+				-webkit-transform: rotateY(-270deg) translateX(50px) rotateX(-210deg);
+				transform-origin: bottom right;
+				-webkit-transform-origin: bottom right;
+			}
+			.left2 {
+				transform: rotateY(270deg) translateX(-50px) rotateX(-210deg);
+				-webkit-transform: rotateY(270deg) translateX(-50px) rotateX(-210deg);
+				transform-origin: bottom left;
+				-webkit-transform-origin: bottom left;
+			}
+			
+			
+			.front2 {
+				transform: translateZ(50px) rotateX(-210deg);
+				-webkit-transform: translateZ(50px) rotateX(-210deg);
+				transform-origin: bottom center;
+				-webkit-transform-origin: bottom center;
+			}
+			
+			
+			
+			
+			
+			
+			
 		</style>
 	</head>
 
 	<body>
 		<div class="container">
+			<div class="diamond">
+				<div class="front3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:magenta;stroke:black;stroke-width:1"/>​					
+					</svg>
+				</div>
+				<div class="back3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:red;stroke:black;stroke-width:1"/>				
+					</svg>
+				</div>
+		<!--		<div class="bottom">
+					<svg height="100" width="100">
+						<rect x="0" y="0" width="100" height="100" style="fill:black;stroke:black;stroke-width:1"/>
+					</svg>
+				</div>
+		-->
+				<div class="left3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:blue;stroke:black;stroke-width:1"/>					
+					</svg>
+				</div>
+				<div class="right3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:purple;stroke:black;stroke-width:1"/>​
+					</svg>
+				</div>
+				<div class="front2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:magenta;stroke:black;stroke-width:1"/>​					
+					</svg>
+				</div>
+				<div class="back2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:red;stroke:black;stroke-width:1"/>				
+					</svg>
+				</div>
+				<div class="left2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:blue;stroke:black;stroke-width:1"/>					
+					</svg>
+				</div>
+				<div class="right2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:purple;stroke:black;stroke-width:1"/>​
+					</svg>
+				</div>
+			
+			
+			</div>
+			
+			<div class="diamond2">
+				<div class="front3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:magenta;stroke:black;stroke-width:1"/>​					
+					</svg>
+				</div>
+				<div class="back3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:red;stroke:black;stroke-width:1"/>				
+					</svg>
+				</div>
+		<!--		<div class="bottom">
+					<svg height="100" width="100">
+						<rect x="0" y="0" width="100" height="100" style="fill:black;stroke:black;stroke-width:1"/>
+					</svg>
+				</div>
+		-->
+				<div class="left3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:blue;stroke:black;stroke-width:1"/>					
+					</svg>
+				</div>
+				<div class="right3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:purple;stroke:black;stroke-width:1"/>​
+					</svg>
+				</div>
+				<div class="front2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:magenta;stroke:black;stroke-width:1"/>​					
+					</svg>
+				</div>
+				<div class="back2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:red;stroke:black;stroke-width:1"/>				
+					</svg>
+				</div>
+				<div class="left2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:blue;stroke:black;stroke-width:1"/>					
+					</svg>
+				</div>
+				<div class="right2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:purple;stroke:black;stroke-width:1"/>​
+					</svg>
+				</div>
+			
+			
+			</div>
+			
+			<div class="diamond3">
+				<div class="front3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:magenta;stroke:black;stroke-width:1"/>​					
+					</svg>
+				</div>
+				<div class="back3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:red;stroke:black;stroke-width:1"/>				
+					</svg>
+				</div>
+		<!--		<div class="bottom">
+					<svg height="100" width="100">
+						<rect x="0" y="0" width="100" height="100" style="fill:black;stroke:black;stroke-width:1"/>
+					</svg>
+				</div>
+		-->
+				<div class="left3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:blue;stroke:black;stroke-width:1"/>					
+					</svg>
+				</div>
+				<div class="right3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:purple;stroke:black;stroke-width:1"/>​
+					</svg>
+				</div>
+				<div class="front2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:magenta;stroke:black;stroke-width:1"/>​					
+					</svg>
+				</div>
+				<div class="back2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:red;stroke:black;stroke-width:1"/>				
+					</svg>
+				</div>
+				<div class="left2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:blue;stroke:black;stroke-width:1"/>					
+					</svg>
+				</div>
+				<div class="right2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:purple;stroke:black;stroke-width:1"/>​
+					</svg>
+				</div>
+			
+			
+			</div>
+			
+			<div class="diamond4">
+				<div class="front3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:magenta;stroke:black;stroke-width:1"/>​					
+					</svg>
+				</div>
+				<div class="back3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:red;stroke:black;stroke-width:1"/>				
+					</svg>
+				</div>
+		<!--		<div class="bottom">
+					<svg height="100" width="100">
+						<rect x="0" y="0" width="100" height="100" style="fill:black;stroke:black;stroke-width:1"/>
+					</svg>
+				</div>
+		-->
+				<div class="left3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:blue;stroke:black;stroke-width:1"/>					
+					</svg>
+				</div>
+				<div class="right3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:purple;stroke:black;stroke-width:1"/>​
+					</svg>
+				</div>
+				<div class="front2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:magenta;stroke:black;stroke-width:1"/>​					
+					</svg>
+				</div>
+				<div class="back2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:red;stroke:black;stroke-width:1"/>				
+					</svg>
+				</div>
+				<div class="left2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:blue;stroke:black;stroke-width:1"/>					
+					</svg>
+				</div>
+				<div class="right2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:purple;stroke:black;stroke-width:1"/>​
+					</svg>
+				</div>
+			
+			
+			</div>
+		
+			<div class="diamond5">
+				<div class="front3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:magenta;stroke:black;stroke-width:1"/>​					
+					</svg>
+				</div>
+				<div class="back3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:red;stroke:black;stroke-width:1"/>				
+					</svg>
+				</div>
+		<!--		<div class="bottom">
+					<svg height="100" width="100">
+						<rect x="0" y="0" width="100" height="100" style="fill:black;stroke:black;stroke-width:1"/>
+					</svg>
+				</div>
+		-->
+				<div class="left3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:blue;stroke:black;stroke-width:1"/>					
+					</svg>
+				</div>
+				<div class="right3">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:purple;stroke:black;stroke-width:1"/>​
+					</svg>
+				</div>
+				<div class="front2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:magenta;stroke:black;stroke-width:1"/>​					
+					</svg>
+				</div>
+				<div class="back2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:red;stroke:black;stroke-width:1"/>				
+					</svg>
+				</div>
+				<div class="left2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:blue;stroke:black;stroke-width:1"/>					
+					</svg>
+				</div>
+				<div class="right2">
+					<svg height="100" width="100">
+						<polygon points="0,100 100,100 50,0" style="fill:purple;stroke:black;stroke-width:1"/>​
+					</svg>
+				</div>
+			
+			
+			</div>
+			
 			<div class="cube">
 				<div class="front"></div>
 				<div class="back"></div>
