@@ -40,13 +40,13 @@
 			}
 			
 			.cube:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube5:hover {
-				animation: spin-out-right 2s;
-				-webkit-animation: spin-out-right 2s;
+				animation: spin-out-left 2s;
+				-webkit-animation: spin-out-left 2s;
 				animation-timing-function: linear;
 				-webkit-animation-timing-function: linear;				
 			}
 
-<!--
+@media DISABLED{
 			.cube:hover{
 				animation: spin-out-back 2s;
 				-webkit-animation: spin-out-back 2s;
@@ -79,7 +79,7 @@
 				animation-timing-function: linear;
 				-webkit-animation-timing-function: linear;
 			}
--->
+}
 			.cube div {
 				position: absolute;
 				width: 200px;
@@ -126,12 +126,12 @@
 			
 			@keyframes spin-out-back {
 				from {transform: rotateX(0deg) translateZ(0);}
-				to {transform: rotateX(-270deg) translateZ(-250px);}
+				to {transform: rotateX(-360deg) translateZ(-250px);}
 			}
 
 			@-webkit-keyframes spin-out-back {
 				from {-webkit-transform: rotateX(0deg) translateX(0);}
-				to {-webkit-transform: rotateX(-270deg) translateZ(-250px);}
+				to {-webkit-transform: rotateX(-360deg) translateZ(-250px);}
 			}
 			
 			@keyframes spin-out-front {
@@ -152,6 +152,16 @@
 			@-webkit-keyframes spin-out-right {
 				from {-webkit-transform: rotateZ(0deg) translateX(0);}
 				to {-webkit-transform: rotateZ(360deg) translateX(250px);}
+			}
+			
+			@keyframes spin-out-left {
+				from {transform: rotateZ(0deg) translateX(0);}
+				to {transform: rotateZ(-360deg) translateX(-250px);}
+			}
+
+			@-webkit-keyframes spin-out-left {
+				from {-webkit-transform: rotateZ(0deg) translateX(0);}
+				to {-webkit-transform: rotateZ(-360deg) translateX(-250px);}
 			}
 
 			.back {
