@@ -25,19 +25,7 @@
 				-webkit-transform: rotate3d(0, 0, 1, 180deg);
 			}
 
-			.cube, .cube2, .cube3, .cube4, .cube5 {
-				position: relative;
-				width: 200px;
-				opacity: 0.7;
-				transform-style: preserve-3d;
-				-webkit-transform-style: preserve-3d;
-				animation: spin 4s;
-				-webkit-animation: spin 4s;
-				animation-iteration-count: infinite;
-				-webkit-animation-iteration-count: infinite;
-				animation-timing-function: linear;
-				-webkit-animation-timing-function: linear;
-			}
+
 
 			.diamond, .diamond2, .diamond3, .diamond4, .diamond5 {
 				position: relative;
@@ -62,74 +50,111 @@
 			
 			.diamond2 div {
 				position: absolute;
-				top: -250px;
+				top: -150px;
 				width: 100px;
 				height: 100px;
 			}
 			.diamond3 div {
 				position: absolute;
-				top: 250px;
+				top: 150px;
 				width: 100px;
 				height: 100px;
 			}
 			.diamond4 div {
 				position: absolute;
-				left: 250px;
+				left: 150px;
 				width: 100px;
 				height: 100px;
 			}
 			.diamond5 div {
 				position: absolute;
-				left: -250px;
+				left: -150px;
 				width: 100px;
 				height: 100px;
 			}
 
 
-
-@media DISABLED{			
-			.cube:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube5:hover {
-				animation: spin-out-left 2s;
-				-webkit-animation: spin-out-left 2s;
-				animation-timing-function: linear;
-				-webkit-animation-timing-function: linear;				
-			}
-}
-
-			.cube:hover{
+			.cube5{
+				position: relative;
+				width: 200px;
+				opacity: 0.7;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
 				animation: spin-out-front 2s;
 				-webkit-animation: spin-out-front 2s;
-				animation-timing-function: linear;
-				-webkit-animation-timing-function: linear;
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: ease-in-out;
+				-webkit-animation-timing-function: ease-in-out;
+				animation-direction: alternate-reverse;
+				-webkit-animation-direction: alternate-reverse;
 			}
 			
-			.cube2:hover{
+			.cube2{
+				position: relative;
+				width: 200px;
+				opacity: 0.7;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
 				animation: spin-out-back 2s;
 				-webkit-animation: spin-out-back 2s;
-				animation-timing-function: linear;
-				-webkit-animation-timing-function: linear;
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: ease-in-out;
+				-webkit-animation-timing-function: ease-in-out;
+				animation-direction: alternate-reverse;
+				-webkit-animation-direction: alternate-reverse;
 			}
 			
-			.cube3:hover{
-				animation: spin-out-right 2s;
-				-webkit-animation: spin-out-right 2s;
-				animation-timing-function: linear;
-				-webkit-animation-timing-function: linear;
-			}
-			.cube4:hover{
+			
+			.cube3{
+				position: relative;
+				width: 200px;
+				opacity: 0.7;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
 				animation: spin-out-left 2s;
 				-webkit-animation: spin-out-left 2s;
-				animation-timing-function: linear;
-				-webkit-animation-timing-function: linear;
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: ease-in-out;
+				-webkit-animation-timing-function: ease-in-out;
+				animation-direction: alternate-reverse;
+				-webkit-animation-direction: alternate-reverse;
+			}
+			
+			.cube4{
+				position: relative;
+				width: 200px;
+				opacity: 0.7;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+				animation: spin-out-right 2s;
+				-webkit-animation: spin-out-right 2s;
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: ease-in-out;
+				-webkit-animation-timing-function: ease-in-out;
+				animation-direction: alternate-reverse;
+				-webkit-animation-direction: alternate-reverse;
 			}
 
-			.cube div {
+			.cube{
+				position: relative;
+				width: 200px;
+				opacity: 0.7;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+				
+			}
+
+			.cube div, .cube2 div, .cube3 div, .cube4 div, .cube5 div {
 				position: absolute;
 				width: 200px;
 				height: 200px;
 			}
 
-			.cube2 div {
+/*			.cube2 div {
 				position: absolute;
 				top: -250px;
 				width: 200px;
@@ -156,6 +181,7 @@
 				width: 200px;
 				height: 200px;
 			}
+*/
 
 			@keyframes spin {
 				from {transform: rotateY(0deg);}
@@ -271,14 +297,7 @@
 				transform-origin: bottom left;
 				-webkit-transform-origin: bottom left;
 			}
-/*			
-			.bottom {
-				transform: rotateX(90deg) translateY(50px);
-				-webkit-transform: rotateX(90deg) translateY(50px);
-				transform-origin: bottom center;
-				-webkit-transform-origin: bottom center;
-			}
-*/			
+		
 			.front3 {
 				transform: translateZ(50px) rotateX(30deg);
 				-webkit-transform: translateZ(50px) rotateX(30deg);
@@ -325,6 +344,53 @@
 
 	<body>
 		<div class="container">
+
+			
+			<div class="cube">
+				<div class="front"></div>
+				<div class="back"></div>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+
+			<div class="cube2">
+				<div class="front"></div>
+				<div class="back"></div>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+
+			<div class="cube3">
+				<div class="front"></div>
+				<div class="back"></div>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+
+			<div class="cube4">
+				<div class="front"></div>
+				<div class="back"></div>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+
+			<div class="cube5">
+				<div class="front"></div>
+				<div class="back"></div>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			
 			<div class="diamond">
 				<div class="front3">
 					<svg height="100" width="100">
@@ -580,51 +646,8 @@
 			
 			</div>
 			
-			<div class="cube">
-				<div class="front"></div>
-				<div class="back"></div>
-				<div class="top"></div>
-				<div class="bottom"></div>
-				<div class="left"></div>
-				<div class="right"></div>
-			</div>
-
-			<div class="cube2">
-				<div class="front"></div>
-				<div class="back"></div>
-				<div class="top"></div>
-				<div class="bottom"></div>
-				<div class="left"></div>
-				<div class="right"></div>
-			</div>
-
-			<div class="cube3">
-				<div class="front"></div>
-				<div class="back"></div>
-				<div class="top"></div>
-				<div class="bottom"></div>
-				<div class="left"></div>
-				<div class="right"></div>
-			</div>
-
-			<div class="cube4">
-				<div class="front"></div>
-				<div class="back"></div>
-				<div class="top"></div>
-				<div class="bottom"></div>
-				<div class="left"></div>
-				<div class="right"></div>
-			</div>
-
-			<div class="cube5">
-				<div class="front"></div>
-				<div class="back"></div>
-				<div class="top"></div>
-				<div class="bottom"></div>
-				<div class="left"></div>
-				<div class="right"></div>
-			</div>
 		</div>
+		
 	</body>
 
 </html>
